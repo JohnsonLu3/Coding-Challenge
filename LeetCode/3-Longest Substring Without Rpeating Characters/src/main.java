@@ -1,6 +1,13 @@
 import java.io.IOException;
 import java.util.Stack;
 
+/**
+ * Given a string, find the length of the longest substring without repeating characters.
+ *
+ * Difficulty Medium
+ *
+ * **/
+
 public class main {
     public static int lengthOfLongestSubstring(String s) {
         int max = 0;
