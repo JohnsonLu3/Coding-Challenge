@@ -25,22 +25,12 @@ public class main {
     }
 
     public static double findMedian(int[] l1, int[] l2){
-        double median = 0;
+        double median;
 
-        for(int i = 0; i < l1.length; i++){
+        l1 =
 
-            // get min and max of both arrays
-            ArrayList<Integer> arr = new ArrayList<Integer>();
-             arr.add(l1[i]);                 // l1 min
-             arr.add(l2[i]);                 // l2 min
-
-            if(l1.length-1 != i)
-                arr.add(l1[l1.length-(i+1)]);       // l1 max
-            if(l2.length-1 != i)
-                arr.add(l2[l2.length-(i+1)]);       // l2 max
-
-
-        }
+        ArrayList<Integer> nums1 = Arrays.asList(l1);
+        ArrayList<Integer> nums2 = Arrays.asList(l2);
 
         return median;
     }
