@@ -17,19 +17,22 @@ def main():
 
     dict = mapString(S)
 
-
+    #0(D) where D is equal to the number of words
     for word in D:
         if len(word) > len(D) or len(word) == 0:
             pass
         else:
-            if checkSubSequence(word, dict):
+            if checkSubSequence(word, dict) and len(word) > len(res):
                 if len(word) > len(res):
                     res = word
 
     print(res)
+
+    # algorithm is O(L*D+S)
     return res
 
 
+# O(L) where L is equal the number of letters in word
 def checkSubSequence(word, dict):
 
     #check if word is a subsequence order matters
@@ -46,7 +49,7 @@ def checkSubSequence(word, dict):
 
     return True
 
-
+# O(S) where S is equal to the number of letters in S
 def mapString(S):
 
     dict = {}
